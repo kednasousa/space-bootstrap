@@ -1,0 +1,78 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-500) 0 var(--spacing-400) var(--spacing-400);
+  align-items: center;
+  width: 100%;
+
+  .navbar {
+    padding: 0;
+  }
+
+  & .logo {
+    width: 48px;
+  }
+
+  & .navigation__links {
+    cursor: pointer;
+    display: flex;
+    min-width: 664px;
+    justify-content: flex-end;
+    padding: 0px var(--spacing-800);
+    gap: var(--spacing-600);
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(40px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    & .navigation_states {
+      font-family: "Barlow Condensed";
+      text-transform: uppercase;
+      height: 96px;
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      flex: 1 0 0;
+      gap: var(--spacing-150);
+      letter-spacing: 2px;
+      font-size: var(--font-size-desktop-text-preset-8);
+      transition: border-bottom 0.1s ease;
+
+      &:hover {
+        color: var(--color-white, #FFF);
+        border-bottom: 3px solid rgba(255, 255, 255, 0.50);
+      }
+
+      &:active {
+        color: var(--color-white, #FFF);
+        border-bottom: 3px solid var(--color-white, #FFF);
+      }
+
+
+      & .number {
+        font-weight: 700;
+        letter-spacing: 2.7px;
+      }
+
+      &::after {
+        content: '';
+        height: 1px;
+        flex: 1 0 0;
+        opacity: 0.25;
+        background: rgba(255, 255, 255, 0.349);
+        backdrop-filter: blur(10px);
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: -520px;
+        width: 550px;
+      }
+
+      & .nav-link {
+        display: flex;
+        gap: var(--spacing-100);
+      }
+    }
+  }
+}
