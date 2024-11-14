@@ -1,0 +1,26 @@
+/* main.css */
+
+/* Base */
+@import url('base/reset/_reset.css');
+@import url('base/typography/_typography.css');
+@import url('base/variables/_variables.css');
+
+/* Components */
+@import url('components/_buttons.css');
+@import url('components/_navbar.css');
+@import url('components/_cards.css');
+
+/* Layout */
+@import url('layout/header/_header.css');
+@import url('layout/_footer.css');
+@import url('layout/_grid.css');
+
+/* Pages */
+@import url('pages/home/_home.css');
+@import url('pages/destination/destination.css');
+@import url('pages/crew/_crew.css');
+@import url('pages/technology/_technology.css');
+
+/* Themes */
+@import url('themes/_dark-theme.css');
+@import url('themes/_light-theme.css');
