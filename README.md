@@ -8,7 +8,7 @@
 
 ## Como Executar
 
-1. Clique no link [aqui](https://example.com)
+1. Clique no link [aqui](kednasousa.github.io/space-bootstrap/)
 
 ## Tecnologias Usadas
 
